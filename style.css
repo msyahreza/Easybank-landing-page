@@ -3,9 +3,10 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: white;
 }
 
 .body {
@@ -77,6 +78,10 @@
   transition: 1s ease;
 }
 
+.container-digibank {
+  background-color: hsl(0, 0%, 98%);
+}
+
 picture img {
   object-fit: contain;
   object-position: 100% 0;
@@ -84,17 +89,17 @@ picture img {
   height: 800px;
 }
 
-picture{
+picture {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content1-row{
+.content1-row {
   height: 550px;
 }
 
-.container-fluid .column1{
+.container-fluid .column1 {
   padding-top: 50px;
   padding-left: 100px;
 }
@@ -109,38 +114,96 @@ picture{
 }
 
 /* section 2 */
-.container-content{
-  background-color: hsl(0, 0%, 98%);
+.container-content {
+  background-color: hsl(220, 16%, 96%);
   object-fit: cover;
 }
 
-@media (max-width: 768px) {
+.container-content .col-easy {
+  max-width: 600px;
+}
 
-  .navbar .navbar-nav{
+.card-deck .card-easybank {
+  background-color: transparent;
+}
+
+.card-easybank img {
+  max-width: 100px;
+}
+
+/* section 3 */
+.container-articles {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.card-articles {
+  border: none;
+}
+
+.card {
+  border: none !important;
+  border-radius: 0px !important;
+}
+
+.card img {
+  width: 100%;
+  max-height: 170px;
+}
+
+/* Footer */
+.container-footer {
+  background-color: hsl(233, 26%, 24%);
+}
+
+.list-unstyled li {
+  padding-top: 10px;
+}
+
+.list-unstyled li a {
+  color: white;
+}
+
+.list-unstyled li a:hover {
+  color: hsl(136, 65%, 51%);
+  text-decoration: none;
+  transition: 0.5s ease;
+}
+
+.copyright {
+  padding-top: 30px;
+  color: white;
+}
+
+.so-logo img {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
     align-items: center;
     justify-content: center;
   }
 
-  .btn-inv-contain{
+  .btn-inv-contain {
     align-items: center;
     justify-content: center;
     display: flex;
     padding-left: 25px;
   }
-  .title{
+  .title {
     text-align: center;
   }
 
-  .subtitle{
+  .subtitle {
     text-align: center;
   }
 
-  .btn-invite-div{
+  .btn-invite-div {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .column2{
+  .column2 {
     order: 1;
     padding-bottom: 0px;
     object-fit: cover;
@@ -149,10 +212,9 @@ picture{
     width: 100%;
     bottom: 0px;
     background-image: url("/images/bg-intro-mobile.svg");
-    
   }
 
-  .column1{
+  .column1 {
     order: 2;
     padding-top: 0px;
     align-items: center;
@@ -160,7 +222,7 @@ picture{
     padding-left: 0px;
   }
 
-  .container-fluid .column1{
+  .container-fluid .column1 {
     padding-left: 0px;
     padding-bottom: 10px;
   }
@@ -170,22 +232,20 @@ picture{
     max-height: 400px;
   }
 
-  .container-content{
+  .container-content {
     background-color: hsl(0, 0%, 98%);
     object-fit: cover;
     bottom: 0px;
     padding-top: 10px;
   }
-  .content1-row{
+  .content1-row {
     height: 800px;
   }
-}
+  .container-content {
+    text-align: center;
+  }
 
-/* picture img{
-    max-height: 100%;
-    float: right;
-    clear: right;
-    display: block;
-    margin-left: auto;
-    background-image: url("/images/bg-intro-desktop.svg");
-} */
+  .card-easybank {
+    align-items: center;
+  } 
+}
