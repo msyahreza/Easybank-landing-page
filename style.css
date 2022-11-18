@@ -156,10 +156,14 @@ picture {
 }
 
 .list-unstyled li {
-  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .list-unstyled li a {
+  color: white;
+}
+
+.list-unstyled p{
   color: white;
 }
 
@@ -176,6 +180,7 @@ picture {
 
 .so-logo img {
   cursor: pointer;
+  padding-right: 10px;
 }
 
 @media (max-width: 768px) {
@@ -243,9 +248,16 @@ picture {
   }
   .container-content {
     text-align: center;
+    padding-top: 150px;
   }
 
   .card-easybank {
     align-items: center;
-  } 
+  }
+
+  .article-title{
+    text-align: center;
+    justify-content: center;
+  }
+
 }
