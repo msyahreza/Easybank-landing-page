@@ -260,4 +260,12 @@ picture {
     justify-content: center;
   }
 
+  .page-footer{
+    text-align: center;
+  }
+  
+  .list-unstyled{
+    text-align: center;
+  }
+
 }
